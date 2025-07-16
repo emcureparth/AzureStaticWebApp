@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Myth or Fact AR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="final1.css">
+</head>
+<body>
+  <div id="container">
+    <video id="video" autoplay playsinline muted></video>
+    <canvas id="canvas"></canvas>
+    <video id="confettiVideo" src="./assets/videos/confetti.webm" muted playsinline></video>
+    <div id="mainLabels">
+      <div id="mainLabel1" class="labelBox">Let's see how well you know about your wellness!</div>
+      <div id="mainLabel2" class="labelBox">Answer 3 simple questions and get a Free Sample from ARTH.</div>
+    </div>
+    <div id="questionLabel" class="labelBox" style="display:none"></div>
+    <div id="bottomLabel">Raise your hand to start the quiz.</div>
+    <div id="countdown">3</div>
+    <button id="catalogueBtn"><span id="catalogueBtnText" style="display:inline-block;max-width:90%;white-space:nowrap;overflow:hidden;text-align:center;width:100%;">CATALOGUE</span></button>
+    <video id="screensaverVideo" src="./assets/videos/screensaver.webm" loop muted style="display:none;"></video>
+  </div>
+
+  <div id="catalogueScreen">
+    <button id="backToQuizBtn">← Back to Quiz</button>
+    <iframe id="cataloguePDF" src="catalogue.pdf"></iframe>
+  </div>
+
+  <script type="module" src="final1.js"></script>
+</body>
+</html>

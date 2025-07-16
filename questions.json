@@ -1,0 +1,403 @@
+[
+  {
+    "product": "Fatigue Support",
+    "type": "Myth",
+    "statement": "Feeling tired all day is just a normal part of adulthood.",
+    "truth": "Persistent fatigue may indicate nutrient deficiencies.",
+    "productLine": "Try Arth Fatigue Support with highly absorbable iron and B-complex.",
+    "productImage": "assets/images/product1.png",
+    "options": ["Myth", "Fact"],
+    "correct": "Myth"
+  },
+  {
+    "product": "Fatigue Support",
+    "type": "Myth",
+    "statement": "Iron supplements are all the same",
+    "truth": "Absorbability makes a huge difference in energy levels.",
+    "productLine": "Arth Fatigue Supports offers 67% higher iron absorbability",
+    "productImage": "assets/images/product1.png",
+    "options": ["Myth", "Fact"],
+    "correct": "Myth"
+  },
+  {
+    "product": "Fatigue Support",
+    "type": "Myth",
+    "statement": "Only gym-goers need supplements for energy.",
+    "truth": "Even regular adults face energy dips due to stress and gaps",
+    "productLine": "Power your dialy energy with the Arth Fatigue Support.",
+    "productImage": "assets/images/product1.png",
+    "options": ["Myth","Fact"],
+    "correct": "Myth"
+  },
+  {
+    "product": "Fatigue Support",
+    "type": "Fact",
+    "statement": "Nutrition plays a vital role in reducing fatigue",
+    "truth": "B12,Iron, and Folic Acid support cellular energy.",
+    "productLine": "Restore energy naturally with Arth Fatigue Support.",
+    "productImage":"assets/images/product1.png",
+    "options":["Myth","Fact"],
+    "correct": "Fact"
+  },
+  {
+    "product":"Fatigue Support",
+    "type": "Fact",
+    "statement":"Post meal fatigue may indicate nutritional imbalance",
+    "truth": "It's a sign your body needs better energy support",
+    "productLine": "Regain balance with Arth Fatigue Support.",
+    "productImage":"assets/images/product1.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product": "Gut Help Support",
+    "type":"Myth",
+    "statement": "You only need probiotics after antibiotics",
+    "truth": "Gut support should be daily, not reactive",
+    "productLine": "Build gut strength with Arth Gut Health",
+    "productImage":"assets/images/product2.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product": "Gut Help Support",
+    "type": "Myth",
+    "statement": "Bloating is always caused by overeating",
+    "truth": "Gut imbalance is often the real cause",
+    "productLine": "Soothe your stomach with Arth Gut Health Support",
+    "productImage":"assets/images/product2.png",
+    "options": ["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Gut Help Support",
+    "type": "Myth",
+    "statement": "Prebiotics and probiotics don't need to be taken together",
+    "truth": "They work better in combination for gut flora",
+    "productLine": "Balance both with Arth Gut Health Support",
+    "productImage":"assets/images/product2.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Gut Help Support",
+    "type": "Fact",
+    "statement": "70% of your immune system lives in your gut",
+    "truth": "A healthy gut is key to strong immunity",
+    "productLine": "Support immunity with Arth Gut Health Support",
+    "productImage":"assets/images/product2.png",
+    "options": ["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product": "Gut Help Support",
+    "type":"Fact",
+    "statement": "Gut health impacts mood, focus, and skin",
+    "truth": "It influences more than just digestion",
+    "productLine": "Improve total wellness with Arth Gut Health Support",
+    "productImage":"assets/images/product2.png",
+    "options": ["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product": "Brain Fog Aid",
+    "type":"Myth",
+    "statement": "Brain fog only happens to older adults",
+    "truth": "It can affect anyone - especially under stress",
+    "productLine": "Boost dialy clarity with Arth Brain Fog Aid",
+    "productImage":"assets/images/product3.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Brain Fog Aid",
+    "type":"Myth",
+    "statement":"Coffee and energy drinks are the best solution for brain fog",
+    "truth":"They give short bursts but no real clarity",
+    "productLine": "Fuel brain health with Arth Brain Fog Aid",
+    "productImage":"assets/images/product3.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product": "Brain Fog Aid",
+    "type": "Myth",
+    "statement": "Brain fog is just a sign of laziness",
+    "truth": "It often stems from nutrient gaps and poor sleep",
+    "productLine": "Clear the haze with Arth Brain Fog Aid",
+    "productImage":"assets/images/product3.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Brain Fog Aid",
+    "type":"Fact",
+    "statement":"Low B12 and stress are major causes of brain fog",
+    "truth":"These affect memory, focus and alertness",
+    "productLine": "Stay sharp with Arth Brain Fog Aid",
+    "productImage":"assets/images/product3.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+
+  },
+  {
+    "product":"Brain Fog Aid",
+    "type": "Fact",
+    "statement": "Targeted nutrition helps reduce brain fog",
+    "truth": "Nutrients like B12 and omega-3s support cognition",
+    "productLine": "Enhance focus with Arth Brain Fog Aid",
+    "productImage":"assets/images/product3.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product": "PCOS Support",
+    "type": "Myth",
+    "statement":"PCOS only affects periods",
+    "truth": "It also impacts weight, mood, fertility, and skin",
+    "productLine": "Take charge with Arth PCOS Support",
+    "productImage":"assets/images/product4.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"PCOS Support",
+    "type":"Myth",
+    "statement": "Losing weight cures PCOS",
+    "truth": "PCOS requires metabolic and hormonal support",
+    "productLine": "Supports healing with Arth PCOS Support",
+    "productImage":"assets/images/product4.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"PCOS Support",
+    "type":"Myth",
+    "statement": "Hormonal acne and hair fall are unrelated to PCOS",
+    "truth": "These are common symptoms of hormonal imbalance",
+    "productLine": "Balance hormones with Arth PCOS Support",
+    "productImage":"assets/images/product4.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"PCOS Support",
+    "type":"Fact",
+    "statement": "PCOS can impact fertility if left unmanaged",
+    "truth": "Early care helps protect reporductive health",
+    "productLine":"Support your reproductive health with Arth PCOS Support",
+    "productImage":"assets/images/product4.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product":"PCOS Support",
+    "type":"Fact",
+    "statement":"Irregular periods may indicate a hormonal issues",
+    "truth":"They aren't always due to stress",
+    "productLine": "Regulate cycles with Arth PCOS support",
+    "productImage":"assets/images/product4.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product":"Heart Health (Omega-3)",
+    "type": "Myth",
+    "statement":"Only non-vegetarians can get Omega-3",
+    "truth": "Plant-based Omega-3 is a clean, effective source",
+    "productLine": "Try Arth Plant-Based Omega-3 for heart & brain support",
+    "productImage":"assets/images/product5.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Heart Health (Omega-3)",
+    "type":"Myth",
+    "statement":"Omega-3 is only important for people with heart disease",
+    "truth": "Everyone need Omega-3 for brain, heart, and joint health",
+    "productLine": "Stay protected with Arth Plant-based Omega-3",
+    "productImage":"assets/images/product5.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product": "Heart Health (Omega-3)",
+    "type":"Myth",
+    "statement": "Omega-3 supplements always have a fishy smell",
+    "truth": "Plant-based Omega-3 is odorless and easier to consume",
+    "productLine":"Choose clean and odor-free Arth Omega-3",
+    "productImage":"assets/images/product5.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Heart Health (Omega-3)",
+    "type":"Fact",
+    "statement":"Omega-3 supports wellness across all age groups",
+    "truth":"Omega-3 benefits brain, heart, eye, and joints at every stage of life",
+    "productLine":"Support long-term wellness with Arth Omega-3",
+    "productImage":"assets/images/product5.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product":"Heart Health (Omega-3)",
+    "type":"Fact",
+    "statement":"Most Indian diets lack sufficient Omega-3",
+    "truth": "Diet alone may not meet Omega-3 needs, especially for vegetarians",
+    "productLine": "Fill the gap with Arth Plant-Based Omega-3",
+    "productImage":"assets/images/product5.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product":"Bone Health",
+    "type":"Myth",
+    "statement":"Calcium alone is enough for strong bones",
+    "truth": "Bones also need Vitamin D3, K2, and magnesium",
+    "productLine":"Get complete support with Arth Bone Health",
+    "productImage":"assets/images/product6.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Bone Health",
+    "type":"Myth",
+    "statement":"Bone issue only affect the elderly",
+    "truth":"Bone density start declining from your 30s",
+    "productLine":"Strengthen bones early with Arth Bone Health",
+    "productImage":"assets/images/product6.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Bone Health",
+    "type":"Myth",
+    "statement":"Only women need bone supplements",
+    "truth":"Men too experience bone loss and need support",
+    "productLine":"Protect your frame with Arth Bone Health",
+    "productImage":"assets/images/product6.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Bone Health",
+    "type":"Fact",
+    "statement":"Bone density can be imporved with proper nutrition",
+    "truth":"It's never too late to support your bone health",
+    "productLine": "Rebuild strength with Arth Bone Health",
+    "productImage":"assets/images/product6.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product":"Bone Health",
+    "type":"Fact",
+    "statement":"Exercise and nutrition together improve bone strength",
+    "truth":"Both play a role in maintaining bone density",
+    "productLine":"Pair your workouts with Arth Bone Health",
+    "productImage":"assets/images/product6.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product":"Liver Health",
+    "type":"Myth",
+    "statement":"Liver damage only happens due to alcohol",
+    "truth":"Poor diet, medicines, and toxins also affect the liver",
+    "productLine":"Support detox naturally with Arth Liver Health",
+    "productImage":"assets/images/product7.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Liver Health",
+    "type":"Myth",
+    "statement":"You don't need to worry about liver health unless you're sick",
+    "truth":"The liver performs 500+ functions silently every day",
+    "productLine":"Keep it clean with Arth Liver Health",
+    "productImage":"assets/images/product7.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Liver Health",
+    "type":"Myth",
+    "statement":"Fatty liver only happens to overweight people",
+    "truth":"Even lean individuals can have fatty liver",
+    "productLine":"Protect you liver with Arth Liver Health",
+    "productImage":"assets/images/product7.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Liver Health",
+    "type":"Fact",
+    "statement":"A sluggish liver can make you feel tired and foggy",
+    "truth":"Liver health is closely tied to energy and mood",
+    "productLine":"Re-energize with Arth Liver Health",
+    "productImage":"assets/images/product7.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product":"Liver Health",
+    "type":"Fact",
+    "statement":"The liver detoxifies naturally when supported with the right herbs",
+    "truth":"Herbs like milk thistle and dandelion aid detoxification",
+    "productLine":"Support natural detox with Arth Liver Health",
+    "productImage":"assets/images/product7.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product":"Electrolyte Support",
+    "type":"Myth",
+    "statement":"You only need electrolytes when you're playing sports",
+    "truth":"Everyday sweat, heat, or travel can cause depletion",
+    "productLine":"Stay hydrated with Arth Electrolyte Support",
+    "productImage":"assets/images/product8.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Electrolyte Support",
+    "type":"Myth",
+    "statement":"Water is enough for complete rehydration",
+    "truth":"Water doesn't replace lost sodium, potassium, or magnesium",
+    "productLine":"Replenish right with Arth Electrolyte Support",
+    "productImage":"assets/images/product8.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Electrolyte Support",
+    "type":"Myth",
+    "statement":"You can't get dehydrated in AC environments",
+    "truth":"ACs silently dehydrate through skin and breath",
+    "productLine":"Maintain balance with Arth Electrolyte Support",
+    "productImage":"assets/images/product8.png",
+    "options":["Myth","Fact"],
+    "correct":"Myth"
+  },
+  {
+    "product":"Electrolyte Support",
+    "type":"Fact",
+    "statement":"Low electrolyte level can cause headaches and fatigue",
+    "truth":"These are common early signs of imbalance",
+    "productLine":"Combat everyday fatigue with Arth Electrolyte Support",
+    "productImage":"assets/images/product8.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  },
+  {
+    "product":"Electrolyte Support",
+    "type":"Fact",
+    "statement":"Packaged juices don't hydrate as well as balanced electrolytes",
+    "truth":"They're high in sugar and low in essential minerals",
+    "productLine":"Choose balanced hydration with Arth Electrolyte Support",
+    "productImage":"assets/images/product8.png",
+    "options":["Myth","Fact"],
+    "correct":"Fact"
+  }
+]

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Catalogue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3edf6;
+      color: #23234a;
+      font-family: 'LEMONMILK', sans-serif;
+      min-height: 100vh;
+    }
+    h1 {
+      margin: 32px 0 16px 0;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .container {
+      background: #f3edf6;
+      border: 2.5px solid #8d6dc4;
+      border-radius: 22px;
+      box-shadow: 0 4px 32px rgba(141,109,196,0.10);
+      max-width: 1320px;
+      margin: 48px auto 48px auto;
+      padding: 32px 32px 40px 32px;
+      box-sizing: border-box;
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0 24px 48px 24px;
+      background: none;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .product {
+      padding: 12px 8px 8px 8px;
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.15s;
+      position: relative;
+      background: none;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .product:hover {
+      transform: translateY(-6px) scale(1.04);
+    }
+    .product img {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      border-radius: 14px;
+      background: transparent;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(141,109,196,0.08);
+      max-width: 100%;
+      height: auto;
+    }
+    .product-name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 6px;
+      text-align: center;
+      color: #6d4bb6;
+      word-break: break-word;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0; width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.85);
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background: #f3edf6;
+      border: 2px solid #8d6dc4;
+      border-radius: 22px;
+      padding: 32px 24px 24px 24px;
+      box-shadow: 0 8px 32px rgba(141,109,196,0.12);
+      max-width: 90vw;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .modal-content img {
+      max-width: 90vw;
+      max-height: 70vh;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      background: #fff;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(141,109,196,0.10);
+      display: block;
+    }
+    .modal-content .desc {
+      color: #6d4bb6;
+      font-size: 1.05rem;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 18px;
+      background: #e0d3f7;
+      color: #6d4bb6;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.15s;
+      border: 1.5px solid #8d6dc4;
+    }
+    .close-btn:hover {
+      background: #d1b8f0;
+      color: #4b2e7a;
+    }
+    @media (max-width: 900px) {
+      .gallery { gap: 18px 8px; }
+      .product { width: 44vw; min-width: 120px; max-width: 180px; }
+      .modal-content {
+        padding: 18px 4vw 18px 4vw;
+        max-width: 98vw;
+        max-height: 98vh;
+      }
+      .modal-content img {
+        max-width: 98vw;
+        max-height: 60vh;
+      }
+    }
+    @media (max-width: 500px) {
+      .product {
+        width: 90vw;
+        min-width: 0;
+        max-width: 100vw;
+        padding: 10px 2vw 8px 2vw;
+      }
+      .modal-content {
+        padding: 8px 2vw 8px 2vw;
+      }
+      .modal-content img {
+        max-width: 98vw;
+        max-height: 40vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button onclick="window.location.href='final1.html'" style="position:absolute;top:24px;left:32px;padding:10px 18px;font-size:1.1rem;font-family:'LEMONMILK',sans-serif;font-weight:bold;background:#e0d3f7;color:#6d4bb6;border:1.5px solid #8d6dc4;border-radius:10px;cursor:pointer;z-index:1001;box-shadow:0 2px 8px rgba(141,109,196,0.10);">← Back to Quiz</button>
+  <div class="container">
+    <h1>Product Catalogue</h1>
+    <div class="gallery">
+      <div class="product" data-index="0">
+        <img src="./assets/images/product1.png" alt="Fatigue Support">
+        <div class="product-name">Fatigue Support</div>
+      </div>
+      <div class="product" data-index="1">
+        <img src="./assets/images/product2.png" alt="Gut Health Support">
+        <div class="product-name">Gut Health Support</div>
+      </div>
+      <div class="product" data-index="2">
+        <img src="./assets/images/product3.png" alt="Brain Fog Aid">
+        <div class="product-name">Brain Fog Aid</div>
+      </div>
+      <div class="product" data-index="3">
+        <img src="./assets/images/product4.png" alt="PCOS Support">
+        <div class="product-name">PCOS Support</div>
+      </div>
+      <div class="product" data-index="4">
+        <img src="./assets/images/product5.png" alt="Heart Health">
+        <div class="product-name">Heart Health</div>
+      </div>
+      <div class="product" data-index="5">
+        <img src="./assets/images/product6.png" alt="Bone Health Support">
+        <div class="product-name">Bone Health Support</div>
+      </div>
+      <div class="product" data-index="6">
+        <img src="./assets/images/product7.png" alt="Liver Health Support">
+        <div class="product-name">Liver Health Support</div>
+      </div>
+      <div class="product" data-index="7">
+        <img src="./assets/images/product8.png" alt="Electrolyte Hydration">
+        <div class="product-name">Electrolyte Hydration</div>
+      </div>
+      <div class="product" data-index="8">
+        <img src="./assets/images/product9.png" alt="Perimenopause Multi-Symptom Support">
+        <div class="product-name">Perimenopause Multi-Symptom Support</div>
+      </div>
+      <div class="product" data-index="9">
+        <img src="./assets/images/product10.png" alt="Intimate Cream">
+        <div class="product-name">Intimate Cream</div>
+      </div>
+      <div class="product" data-index="10">
+        <img src="./assets/images/product11.png" alt="Hair, Nails & Skin Support">
+        <div class="product-name">Stress Relief</div>
+      </div>
+      <div class="product" data-index="11">
+        <img src="./assets/images/product12.png" alt="Immunity Booster Vitamin A+D3+K2">
+        <div class="product-name">Hair, Nails & Skin Support</div>
+      </div>
+      <div class="product" data-index="12">
+        <img src="./assets/images/product13.png" alt="Radiant Glow Support">
+        <div class="product-name">Radiant Glow Support</div>
+      </div>
+      <div class="product" data-index="13">
+        <img src="./assets/images/product14.png" alt="Sleep Support Gummies">
+        <div class="product-name">Sleep Support Gummies</div>
+      </div>
+      <div class="product" data-index="14">
+        <img src="./assets/images/product15.png" alt="Weight Management Support">
+        <div class="product-name">Weight Management Support</div>
+      </div>
+      <div class="product" data-index="15">
+        <img src="./assets/images/product16.png" alt="Bitter Drops">
+        <div class="product-name">Bitter Drops</div>
+      </div>
+      <div class="product" data-index="16">
+        <img src="./assets/images/product17.png" alt="Product 17">
+        <div class="product-name">Product 17</div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-btn" id="closeModal">×</button>
+      <img id="modalImg" src="" alt="Product Description">
+      <div class="desc" id="modalDesc"></div>
+    </div>
+  </div>
+ 
+  <script>
+    // Example product descriptions and description images
+    const productDescriptions = [
+{ desc: "Product Description", img: "./assets/images/product1_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product2_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product3_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product4_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product5_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product6_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product7_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product8_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product9_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product10_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product11_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product12_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product13_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product14_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product15_desc.jpg" },
+{ desc: "Product Description", img: "./assets/images/product16_desc.jpg" }
+    ,
+{ desc: "Product Description", img: "./assets/images/product17_desc.jpg" }
+    ];
+ 
+    const products = document.querySelectorAll('.product');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    const modalDesc = document.getElementById('modalDesc');
+    const closeModal = document.getElementById('closeModal');
+ 
+    products.forEach(product => {
+      product.addEventListener('click', () => {
+        const idx = parseInt(product.getAttribute('data-index'));
+        modalImg.src = productDescriptions[idx].img;
+        modalDesc.textContent = productDescriptions[idx].desc;
+        modal.style.display = 'flex';
+      });
+    });
+    closeModal.onclick = () => {
+      modal.style.display = 'none';
+      modalImg.src = '';
+      modalDesc.textContent = '';
+    };
+    modal.onclick = (e) => {
+      if (e.target === modal) closeModal.onclick();
+    };
+  </script>
+</body>
+</html>
