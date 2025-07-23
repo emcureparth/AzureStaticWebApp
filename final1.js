@@ -42,6 +42,8 @@ let showResultImage = null;
 let resultImageTimer = 0;
 let resultImageAlpha = 1;
 
+let confettiFired = false;
+
 const bubbleVideo = document.createElement("video");
 bubbleVideo.src = "./assets/videos/bubble.webm";
 bubbleVideo.loop = true;
@@ -362,14 +364,26 @@ async function render() {
         }, 1000);
       }
       if (state === "inQuestion" && !answerLocked) {
-        const [left, right, top] = [234, 454, 10].map(i => face.faceLandmarks[0][i]);
-        const centerX = canvas.width * (1 - ((left.x + right.x) / 2));
-        const topY = canvas.height * top.y;
+        // Use ear landmarks for bubble positions
+        const [leftEar, rightEar] = [127, 356].map(i => face.faceLandmarks[0][i]);
+        const leftEarX = canvas.width * (1 - leftEar.x);
+        const rightEarX = canvas.width * (1 - rightEar.x);
+        const earY = canvas.height * ((leftEar.y + rightEar.y) / 2); // average height of ears
         const size = canvas.width * 0.28;
+
         const bubbles = [
-          { x: centerX - size - 20, y: topY - canvas.height * 0.18, label: question.options[0] },
-          { x: centerX + 20, y: topY - canvas.height * 0.18, label: question.options[1] }
+          {
+            x: leftEarX - size - 100,
+            y: earY - size / 2,
+            label: question.options[0]
+          },
+          {
+            x: rightEarX + 100,
+            y: earY - size / 2,
+            label: question.options[1]
+          }
         ];
+
         ctx.font = `${size * 0.15}px sans-serif`;
         ctx.textAlign = "center"; ctx.textBaseline = "middle";
         for (let b of bubbles) {
