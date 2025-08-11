@@ -38,8 +38,8 @@ video, canvas {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(89, 89, 170, 0.35);
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   color: white;
   font-weight: bold;
   font-size: 1rem;
@@ -261,8 +261,8 @@ video#screensaverVideo {
 #catalogueBtn {
   font-size: clamp(14px, 2vw, 24px);
   padding: 0;
-  width: clamp(80px, 16vw, 160px);
-  height: clamp(80px, 16vw, 160px);
+  width: clamp(100px, 18vw, 180px);
+  height: clamp(100px, 18vw, 180px);
   display: flex;
   align-items: center;
   justify-content: center;
