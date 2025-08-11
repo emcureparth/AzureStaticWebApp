@@ -259,7 +259,7 @@ video#screensaverVideo {
   border-radius: clamp(8px, 2vw, 18px);
 }
 #catalogueBtn {
-  font-size: clamp(14px, 2vw, 24px);
+  font-size: clamp(12px, 1.6vw, 18px);
   padding: 0;
   width: clamp(100px, 18vw, 180px);
   height: clamp(100px, 18vw, 180px);
