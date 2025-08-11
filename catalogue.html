@@ -242,8 +242,36 @@
         <div class="product-name">Bitter Drops</div>
       </div>
       <div class="product" data-index="16">
-        <img src="./assets/images/product17.png" alt="Product 17">
-        <div class="product-name">Product 17</div>
+        <img src="./assets/images/product17.png" alt="Mood Support">
+        <div class="product-name">Mood Support</div>
+      </div>
+      <div class="product" data-index="17">
+        <img src="./assets/images/product18.png" alt="Product 18">
+        <div class="product-name">Apple Cider Vinegar</div>
+      </div>
+      <div class="product" data-index="18">
+        <img src="./assets/images/product19.png" alt="Product 19">
+        <div class="product-name">High Protein Nutrition Powder(Vanilla Flavour)</div>
+      </div>
+      <div class="product" data-index="19">
+        <img src="./assets/images/product20.png" alt="Product 20">
+        <div class="product-name">High Protein Nutrition Powder(Choco Hazelnut Falvour)</div>
+      </div>
+      <div class="product" data-index="20">
+        <img src="./assets/images/product21.png" alt="Product 21">
+        <div class="product-name">Intimate Depigmentation Cream</div>
+      </div>
+      <div class="product" data-index="21">
+        <img src="./assets/images/product22.png" alt="Product 22">
+        <div class="product-name">Intimate Spray</div>
+      </div>
+      <div class="product" data-index="22">
+        <img src="./assets/images/product23.png" alt="Product 23">
+        <div class="product-name">Isbagol Powder</div>
+      </div>
+      <div class="product" data-index="23">
+        <img src="./assets/images/product24.png" alt="Product 24">
+        <div class="product-name">Longetivity+ Plant Based NMN</div>
       </div>
     </div>
   </div>
@@ -259,48 +287,56 @@
   <script>
     // Example product descriptions and description images
     const productDescriptions = [
-{ desc: "Product Description", img: "./assets/images/product1_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product2_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product3_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product4_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product5_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product6_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product7_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product8_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product9_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product10_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product11_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product12_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product13_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product14_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product15_desc.jpg" },
-{ desc: "Product Description", img: "./assets/images/product16_desc.jpg" }
-    ,
-{ desc: "Product Description", img: "./assets/images/product17_desc.jpg" }
-    ];
- 
+  { desc: "Product Description", img: "./assets/images/product1_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product2_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product3_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product4_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product5_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product6_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product7_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product8_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product9_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product10_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product11_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product12_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product13_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product14_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product15_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product16_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product17_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product18_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product19_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product20_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product21_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product22_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product23_desc.jpg" },
+  { desc: "Product Description", img: "./assets/images/product24_desc.jpg" }
+];
     const products = document.querySelectorAll('.product');
     const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modalImg');
-    const modalDesc = document.getElementById('modalDesc');
     const closeModal = document.getElementById('closeModal');
- 
+    const modalDesc = document.getElementById('modalDesc');
+    const modalImg = document.getElementById('modalImg');
+   
     products.forEach(product => {
       product.addEventListener('click', () => {
         const idx = parseInt(product.getAttribute('data-index'));
-        modalImg.src = productDescriptions[idx].img;
-        modalDesc.textContent = productDescriptions[idx].desc;
         modal.style.display = 'flex';
+        modalDesc.textContent = productDescriptions[idx].desc;
+        modalImg.src = productDescriptions[idx].img;
       });
     });
-    closeModal.onclick = () => {
-      modal.style.display = 'none';
-      modalImg.src = '';
-      modalDesc.textContent = '';
-    };
+   
     modal.onclick = (e) => {
       if (e.target === modal) closeModal.onclick();
+    };
+   
+    closeModal.onclick = () => {
+      modalDesc.textContent = '';
+      modalImg.src = '';
+      modal.style.display = 'none';
     };
   </script>
 </body>
 </html>
+ 
